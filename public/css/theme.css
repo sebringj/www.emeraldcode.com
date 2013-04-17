@@ -97,6 +97,11 @@ header {
   text-decoration: none;
 }
 
+.nav.pull-right {
+	position:relative;
+	top:10px;
+}
+
 .section_header {
 	width: 100%;
 	margin-bottom: 60px;
