@@ -58,6 +58,12 @@ header {
 .navbar-inverse .brand {
     color: #fff;
 }
+.navbar-inverse .brand img {
+	display:inline-block;valign:middle;margin-right:5px;
+}
+.navbar-inverse .brand strong {
+	display:inline-block;position:relative;top:6px;valign:middle;font-size:1.5em;
+}
 .navbar-inverse .nav > li > a {
     /*color: rgb(177, 177, 177);*/
     font-size: 13px;

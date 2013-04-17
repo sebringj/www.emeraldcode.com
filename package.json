@@ -1,0 +1,11 @@
+{
+  "name": "www.emeraldcode.com",
+  "scripts": {
+    "start": "app.js"
+  },
+  "version": "0.0.0",
+  "engines": {
+    "node": "0.10.4"
+  },
+  "subdomain": "emeraldcode"
+}
