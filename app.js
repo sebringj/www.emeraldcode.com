@@ -22,4 +22,4 @@ app.configure(function(){
 
 routes.set(app);
 
-app.listen(process.env.EC_PORT);
+app.listen(process.env.EC_PORT || process.env.PORT);
