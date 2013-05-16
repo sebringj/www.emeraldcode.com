@@ -41,6 +41,17 @@ module.exports.set = function(app) {
 			description: 'the latest news from Emerald Code'
 		});
 	});
+	app.post('/email', function (req, res) {
+		var email = require('../lib/email.js');
+		email.send({
+		    from: "noreply@emeraldcode.com",
+		    to: "jason.sebring@emeraldcode.com",
+		    subject: req.body.subject, 
+		    html: req.body.html
+		}, function(data) {
+			res.json(data);
+		});
+	});
 	
 	// 404
 	app.use(function(req, res, next){

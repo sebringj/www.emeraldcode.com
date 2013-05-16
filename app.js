@@ -5,7 +5,6 @@ var express = require('express'),
 	engine = require('ejs-locals');
 
 var app = express();
-
 app.configure(function(){
 	app.engine('ejs', engine);
 	app.set('view engine', 'ejs');

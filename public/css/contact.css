@@ -20,7 +20,9 @@
 #contact .form .box{
 	margin: 0;
 }
-#contact .form .box input[type="text"]{
+#contact .form .box input[type="text"],
+#contact .form .box input[type="tel"],
+#contact .form .box input[type="email"]{
 	padding-left: 39px;
 	margin-bottom: 10px;
 	color: black;

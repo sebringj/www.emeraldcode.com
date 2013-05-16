@@ -1,5 +1,6 @@
 <% layout('layout') -%>
 <% stylesheet('/css/contact.css') -%>
+<% script('/js/contact.js') -%>
 <div id="contact">
     <div class="container">
         <div class="section_header">
@@ -8,19 +9,23 @@
         <div class="row contact">
             <p>
                 We’d love to hear from you. Interested in working together? Fill out the form below with some info about your project and we will get back to you same day. 
-				We'll ask you some questions to get a better idea of what you are looking to do then send you a proposal.</p>
-
-            <form>
+				We'll ask you some questions to get a better idea of what you are looking to do then send you a proposal.
+			</p>
+            <form id="contactform" action="#" novalidate>
                 <div class="row form">
                     <div class="span6 box">
-                        <input class="name" type="text" placeholder="Name">
-                        <input class="mail" type="text" placeholder="Email">
-                        <input class="phone" type="text" placeholder="Phone">
+                        <input id="name" type="text" class="name" required type="text" placeholder="Name">
+                        <input id="email" type="email" class="mail" required type="text" placeholder="Email">
+                        <input id="phone" type="tel" class="phone" required type="text" placeholder="Phone">
                     </div>
                     <div class="span6 box box_r">
-                        <textarea placeholder="Type a message here..."></textarea>
+                        <textarea id="message" required placeholder="Type a message here..."></textarea>
                     </div>
                 </div>
+
+				<div id="error" class="alert alert-error" style="display:none;">
+				  Oops, please fill out the form completely.
+				</div>
 
                 <div class="row submit">
                     <div class="span5 box">
@@ -33,6 +38,10 @@
                     </div>
                 </div>
             </form>
+
+			<div id="thanks" class="alert alert-success" style="display:none">
+			  Thanks! We'll be in touch.
+			</div>
         </div>
     </div>
 
