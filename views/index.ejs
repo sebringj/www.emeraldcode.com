@@ -2,46 +2,32 @@
 <% stylesheet('/css/index.css') -%>
 <% script('/js/index-slider.js') -%>
 <section id="feature_slider" class="">
-    <!-- 
-        Each slide is composed by <img> and .info
-        - .info's position is customized with css in index.css
-        - each <img> parallax effect is declared by the following params inside its class:
-        
-        example: class="asset left-472 sp600 t120 z3"
-        left-472 means left: -472px from the center
-        sp600 is speed transition
-        t120 is top to 120px
-        z3 is z-index to 3
-        Note: Maintain this order of params
-
-        For the backgrounds, you can combine from the bgs folder :D
-    -->
     <article class="slide" id="showcasing" style="background: url('/img/backgrounds/color-splash-green.jpg') repeat-x top center;">
         <img class="asset left-30 sp600 t120 z1" src="/img/slides/scene1/macbook.png" />
         <div class="info">
             <h2>Web Commerce custom tailored to your brand.</h2>
         </div>
     </article>
-    <article class="slide" id="ideas" style="background: url('img/backgrounds/ocean.jpg') repeat-x top center;">
+    <article class="slide" id="ideas" style="background: url('/img/backgrounds/ocean.jpg') repeat-x top center;">
         <div class="info">
             <h2>Integrated into your Netsuite<sup>&reg;</sup> or Hubsoft<sup>&reg;</sup> powered ERP</h2>
         </div>
-        <img class="asset left-480 sp600 t260 z1" src="img/slides/scene2/left.png" />
-        <img class="asset left-210 sp600 t213 z2" src="img/slides/scene2/middle.png" />
-        <img class="asset left60 sp600 t260 z1" src="img/slides/scene2/right.png" />
+        <img class="asset left-480 sp600 t260 z1" src="/img/slides/scene2/left.png" />
+        <img class="asset left-210 sp600 t213 z2" src="/img/slides/scene2/middle.png" />
+        <img class="asset left60 sp600 t260 z1" src="/img/slides/scene2/right.png" />
     </article>
-    <article class="slide" id="tour" style="background: url('img/backgrounds/color-splash.jpg') repeat-x top center;">
-        <img class="asset left-472 sp650 t210 z3" src="img/slides/scene3/ipad.png" />
-        <img class="asset left-365 sp600 t270 z4" src="img/slides/scene3/iphone.png" />
-        <img class="asset left-350 sp450 t135 z2" src="img/slides/scene3/desktop.png" />
-        <img class="asset left-185 sp550 t220 z1" src="img/slides/scene3/macbook.png" />
+    <article class="slide" id="tour" style="background: url('/img/backgrounds/color-splash.jpg') repeat-x top center;">
+        <img class="asset left-472 sp650 t210 z3" src="/img/slides/scene3/ipad.png" />
+        <img class="asset left-365 sp600 t270 z4" src="/img/slides/scene3/iphone.png" />
+        <img class="asset left-350 sp450 t135 z2" src="/img/slides/scene3/desktop.png" />
+        <img class="asset left-185 sp550 t220 z1" src="/img/slides/scene3/macbook.png" />
         <div class="info">
             <h2>Looking great on every device and platform</h2>
         </div>
     </article>
-    <article class="slide" id="responsive" style="background: url('img/backgrounds/clouds.jpg') repeat-x top center;">
-        <img class="asset left-472 sp600 t120 z3" src="img/slides/scene4/cloud-2-hosting.png" />
-        <img class="asset left-190 sp500 t120 z2" src="img/slides/scene4/customer-support.png" />
+    <article class="slide" id="responsive" style="background: url('/img/backgrounds/clouds.jpg') repeat-x top center;">
+        <img class="asset left-472 sp600 t120 z3" src="/img/slides/scene4/cloud-2-hosting.png" />
+        <img class="asset left-190 sp500 t120 z2" src="/img/slides/scene4/customer-support.png" />
         <div class="info">
             <h2>Cloud hosting with 24/7 support</h2>
         </div>
@@ -59,7 +45,7 @@
                 <!-- Feature -->
                 <div class="span4 feature first">
                     <div class="img_box">
-                        <a href="/services/#webmobile">
+                        <a href="/services">
                             <img src="/img/service1.png">
                             <span class="circle"> 
                                 <span class="plus">&#43;</span>
@@ -67,9 +53,9 @@
                         </a>
                     </div>
                     <div class="text">
-                        <h6>Web &amp; Mobile Presence</h6>
+                        <h6>Web &amp; Mobile Commerce</h6>
                         <p>
-                            Your web and mobile experience should run at the speed of your business. We aim to exceed your expectations.
+                            We program and design your website to work with your ERP.
                         </p>
                     </div>
                 </div>
@@ -95,7 +81,7 @@
                 <div class="span4 feature last">
                     <div class="img_box">
                         <a href="http://www.kitgui.com" target="_blank">
-                            <img src="img/service2.png">
+                            <img src="/img/service2.png">
                             <span class="circle"> 
                                 <span class="plus">&#43;</span>
                             </span>

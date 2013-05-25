@@ -8,7 +8,6 @@ $(function () {
         }
     });
 
-    // Flex
     if ($(".flexslider").length) {
         $('.flexslider').flexslider();
     }
@@ -18,6 +17,12 @@ $(function () {
     staticHeader.initialize();
 
     portfolioItem.initialize();
+
+	$('a[href]').each(function() {
+		if ($(this).attr('href') === location.pathname) {
+			$(this).addClass('active');
+		}
+	});
 });
 
 var portfolioItem = {
@@ -35,7 +40,7 @@ var portfolioItem = {
             $bigPics.eq(index).fadeIn();
         });
     }
-}
+};
 
 var staticHeader = {
     initialize: function () {
@@ -43,7 +48,7 @@ var staticHeader = {
             $("body").css("padding-top", 0);
         }
     }
-}
+};
 
 var servicesCircle = {
     initialize: function () {
@@ -59,5 +64,5 @@ var servicesCircle = {
             $(this).addClass("active");
         });
     }
-}
+};
 
