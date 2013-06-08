@@ -500,6 +500,8 @@
     border-radius: 8px;
 }
 
+#mobile-title { display:none; }
+
 
 /* Responsive
 -------------------------------------------------- */
@@ -597,6 +599,7 @@
         margin-right: 10px;
         width: auto;
     }
+	#mobile-title { display:block;margin-bottom:20px;margin-top:-40px; }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
