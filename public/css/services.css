@@ -1,34 +1,33 @@
 /*Service Option 1*/
-#service_1{
-	margin-top: 70px;
-	margin-bottom: 115px;
+#service_2 {
+	margin-top: 120px;
 }
 #service_1 .section_header h3 span,
-#service_2 .section_header h3 span{
+#service_2 .section_header h3 span {
 	font-size: 18px;
 	line-height: 20px;
 }
-#service_1 .service_wrapper .feature{
+#service_1 .service_wrapper .feature {
 	margin-right: 0px;
 }
-#service_1 .service_wrapper .last{
+#service_1 .service_wrapper .last {
 	margin-right: 0;
 }
-#service_1 .service_wrapper .feature .text{
+#service_1 .service_wrapper .feature .text {
 	margin: 23px auto 0;
 	width: 92%;
 }
-#service_1 .service_wrapper .feature .text h6{
+#service_1 .service_wrapper .feature .text h6 {
 	color: #3F3F3F;
 	margin: 0 0 14px 0;
 	font-size: 20px;
 }
-#service_1 .service_wrapper .feature .text p{
+#service_1 .service_wrapper .feature .text p {
 	margin: 0;
 	font-size: 14px;
 	line-height: 22px;
 }
-#service_1 .service_wrapper .feature .img_box{
+#service_1 .service_wrapper .feature .img_box {
 	position: relative;
 	border-radius: 5px;
 }
@@ -68,9 +67,6 @@
 }
 
 /*Service Option 2*/
-#service_2{
-	margin: 40px 0 115px;
-}
 #service_2 .perk{
 	margin-bottom: 82px;
 	margin-left: 0;
@@ -111,35 +107,35 @@
 #process{
 	min-height: 350px;
 }
-#process .section_header h3{
+#process .section_header h3 {
 	margin:0;
 }
 #process .description{
 	position: relative;
 }
-#process .description .text{
+#process .description .text {
 	position: absolute;
 	display: none;
 }
 #process .description .text.active {
 	display: block;
 }
-#process .description h4{
+#process .description h4 {
 	font-size: 32px;
 	line-height: 35px;
 	font-weight: normal;
 	margin-bottom: 20px;
 }
-#process .description p{
+#process .description p {
 	font-size: 15px;
 	color: #3F3F3F;
 	line-height: 26px;
 }
-#process .areas{
+#process .areas {
 	margin-left: 0;
 	float: right;
 }
-#process .areas .circle{
+#process .areas .circle {
 	height: 210px;
 	cursor: pointer;
 	float: left;
@@ -183,6 +179,9 @@
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
+	#service_2 {
+		margin-top: 100px;
+	}
 	#service_2 .description_wrapper{
 		width: 77%;
 	}
@@ -202,6 +201,9 @@
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {	
+	#service_2 {
+		margin-top: 30px;
+	}
 	#service_1 .service_wrapper .feature .img_box{
 		text-align: center;
 	}

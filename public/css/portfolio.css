@@ -100,11 +100,15 @@
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
-
+	#portfolio {
+		margin-top: 100px;
+	}
 }	
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {	
-
+	#portfolio {
+		margin-top: 30px;
+	}
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {

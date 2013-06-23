@@ -235,6 +235,8 @@
 #showcase .features_op1_row .feature .img_box{
     position: relative;
     border-radius: 5px;
+	max-height:164px;
+	overflow:hidden;
 }
 #showcase .features_op1_row .feature .img_box img {
     border-radius: 5px;
@@ -520,6 +522,9 @@
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
+	.section_header.higher-class {
+		margin-top:30px;
+	}
     #in_pricing .plan a.order{
         width: 64%;
     }
@@ -599,7 +604,6 @@
         margin-right: 10px;
         width: auto;
     }
-	#mobile-title { display:block;margin-bottom:20px;margin-top:-40px; }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
