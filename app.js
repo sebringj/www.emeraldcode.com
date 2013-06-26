@@ -6,6 +6,14 @@ var express = require('express'),
 
 var app = express();
 
+app.use(function(req, res, next) { 
+  if(req.headers.host == 'emeraldcode.com') { 
+	res.redirect(301,'http://www.emeraldcode.com'+req.url);
+	return;
+  } 
+  next();
+});
+
 app.configure(function() {
 	app.engine('ejs', engine);
 	app.set('view engine', 'ejs');
@@ -14,11 +22,6 @@ app.configure(function() {
 	app.use(express.bodyParser());
 	app.use(express.methodOverride());
 	app.use(app.router);
-	app.use(function(req, res, next) { 
-	  if(req.headers.host == 'emeraldcode.com') { 
-		res.redirect(301,'http://www.emeraldcode.com'+req.url);
-	  } 
-	});
 	app.use(express.static(path.join(__dirname, 'public')));
 	app.use(express.favicon(__dirname + '/public/img/favicon.ico'));
 });
