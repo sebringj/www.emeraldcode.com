@@ -5,6 +5,12 @@ var express = require('express'),
 	engine = require('ejs-locals');
 
 var app = express();
+app.use(function(req, res, next) { 
+  if(req.headers.host === 'emeraldcode.com') { 
+    res.writeHead(303, {'Location': 'http://www.emeraldcode.com'+req.url}) 
+    res.end() 
+  } 
+});
 app.configure(function() {
 	app.engine('ejs', engine);
 	app.set('view engine', 'ejs');
@@ -15,13 +21,6 @@ app.configure(function() {
 	app.use(app.router);
 	app.use(express.static(path.join(__dirname, 'public')));
 	app.use(express.favicon(__dirname + '/public/img/favicon.ico'));
-});
-
-app.use(function(req, res, next) { 
-  if(req.headers.host === 'emeraldcode.com') { 
-    res.writeHead(303, {'Location': 'http://www.emeraldcode.com'+req.url}) 
-    res.end() 
-  } 
 });
 
 routes.set(app);
