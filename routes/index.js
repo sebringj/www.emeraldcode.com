@@ -1,6 +1,7 @@
 module.exports.set = function(app) {
 	app.get('/', function(req, res, next){
 		res.render('index', { 
+			host : req.headers.host,
 			title : 'Emerald Code',
 			description: 'custom eCommerce for Netsuite, Hubsoft, nopCommerce'
 		});
