@@ -16,8 +16,7 @@ app.configure(function() {
 	app.use(app.router);
 	app.use(function(req, res, next) { 
 	  if(req.headers.host == 'emeraldcode.com') { 
-	    res.writeHead(302, {'Location': 'http://www.emeraldcode.com'+req.url});
-	    res.end();
+		res.redirect('http://www.emeraldcode.com'+req.url);
 	  } 
 	});
 	app.use(express.static(path.join(__dirname, 'public')));
