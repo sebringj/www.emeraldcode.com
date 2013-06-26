@@ -16,14 +16,14 @@ app.configure(function() {
 	app.use(app.router);
 	app.use(express.static(path.join(__dirname, 'public')));
 	app.use(express.favicon(__dirname + '/public/img/favicon.ico'));
+	app.use(function(req, res, next) { 
+	  if(req.headers.host === 'emeraldcode.com') { 
+	    res.writeHead(303, {'Location': 'http://www.emeraldcode.com'+req.url}) 
+	    res.end() 
+	  } 
+	});
 });
 
-app.use(function(req, res, next) { 
-  if(req.headers.host === 'emeraldcode.com') { 
-    res.writeHead(303, {'Location': 'http://www.emeraldcode.com'+req.url}) 
-    res.end() 
-  } 
-});
 
 routes.set(app);
 
