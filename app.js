@@ -17,6 +17,13 @@ app.configure(function() {
 	app.use(express.favicon(__dirname + '/public/img/favicon.ico'));
 });
 
+app.use(function(req, res, next) { 
+  if(req.headers.host === 'emeraldcode.com') { 
+    res.writeHead(302, {'Location': 'http://www.emeraldcode.com'+req.url}) 
+    res.end() 
+  } 
+});
+
 routes.set(app);
 
 app.listen(process.env.EC_PORT || process.env.PORT || 3000);
