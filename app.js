@@ -19,7 +19,7 @@ app.configure(function() {
 
 app.use(function(req, res, next) { 
   if(req.headers.host === 'emeraldcode.com') { 
-    res.writeHead(302, {'Location': 'http://www.emeraldcode.com'+req.url}) 
+    res.writeHead(303, {'Location': 'http://www.emeraldcode.com'+req.url}) 
     res.end() 
   } 
 });
