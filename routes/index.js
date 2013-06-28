@@ -53,6 +53,9 @@ module.exports.set = function(app) {
 			res.json(data);
 		});
 	});
+	app.get('/hubsoft-web-api', function(req, res, next) {
+		res.redirect(301,'http://api.hubsoft.ws/docs');
+	});
 	
 	// 404
 	app.use(function(req, res, next){
