@@ -28,4 +28,4 @@ app.configure(function() {
 
 routes.set(app);
 
-app.listen(process.env.EC_PORT || process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000);
